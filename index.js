@@ -4,7 +4,7 @@ const cors = require('cors');
 const misrutas = require('./routes/rutas');
 
 const app = express();
-const port = process.env.PORT || 10000;
+const port = process.env.PORT || 3000;
 
 //configurar CORS para solicitudes de origen cruzado
 app.use(
