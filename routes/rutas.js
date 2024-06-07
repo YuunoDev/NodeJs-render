@@ -91,7 +91,7 @@ router.post('/producto/:id', (req, res) => {
     });
 });
 
-router.get('calculos/:width', (req, res) => {
+router.get('/calculos/:width', (req, res) => {
     const { width } = req.params;
     let a = cuadrado.area(width);
     let b = cuadrado.perimetro(width);
