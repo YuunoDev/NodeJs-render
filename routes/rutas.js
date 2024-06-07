@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const cuadrado = require('../calculos');
+const cuadrado = require('../calculos.js');
 
 // router.get('/', (req, res) => {
 //     res.send({ message: 'Hola mundo soy Adrian Alonso Arambula' });
