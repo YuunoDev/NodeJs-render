@@ -5,7 +5,16 @@ const misrutas = require('./routes/rutas');
 
 const app = express();
 const port = process.env.PORT || 3000;
-app.use(cors());
+
+//configurar CORS para solicitudes de origen cruzado
+app.use(cors(
+  {
+    origin: 'https://nodejs-render-jzcu.onrender.com',  }
+
+));
+
+
+//app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use('/', misrutas);
